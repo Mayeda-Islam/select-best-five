@@ -1,0 +1,11 @@
+body {
+    background-color: rgba(21, 21, 21, 1);
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
