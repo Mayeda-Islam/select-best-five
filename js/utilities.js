@@ -48,6 +48,9 @@ document
       if (managerValue < 0 || coachValue < 0) {
          alert("put a positive value");
          displayTotalById.innerText = "00";
+      } else if (isNaN(managerValue) || isNaN(coachValue)) {
+         alert("put a number value");
+         displayTotalById.innerText = "00";
       } else {
          const totalValue = parseInt(playerExpense) + managerValue + coachValue;
          displayTotalById.innerText = totalValue;
@@ -63,6 +66,8 @@ function calculateTotal(inputId) {
 // validation for negative number:
 function validationForNegativeNumber(number) {
    if (number < 0) {
+      return false;
+   } else if (isNaN(number)) {
       return false;
    } else {
       return true;
