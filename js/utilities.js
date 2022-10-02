@@ -4,8 +4,17 @@ function selectButton() {
    const playerContainer = document.getElementById("player-container");
    const li = document.createElement("li");
    li.classList.add("li");
-   li.innerText = playerName;
    playerContainer.appendChild(li);
+   let player = document.getElementsByClassName("li");
+   const playerLength = player.length;
+   console.log(playerLength);
+   if (playerLength - 1 < 5) {
+      console.log(playerLength - 1);
+      li.innerText = playerName;
+      playerContainer.appendChild(li);
+   } else {
+      alert("beshi");
+   }
 }
 
 document.getElementById("calculate").addEventListener("click", function () {
@@ -15,11 +24,8 @@ document.getElementById("calculate").addEventListener("click", function () {
    console.log(perPlayerValue);
    const playerExpense = document.getElementById("player-expense");
    const playerContainer = document.getElementsByClassName("li");
-   if (playerContainer.length - 1 >= 5) {
-      alert("beshi");
-   } else {
-      playerExpense.innerText = perPlayerValue * playerContainer.length;
-   }
+
+   playerExpense.innerText = perPlayerValue * playerContainer.length;
 });
 document
    .getElementById("calculate-total")
