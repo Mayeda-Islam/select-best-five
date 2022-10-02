@@ -1,19 +1,26 @@
-function selectButton() {
+function selectButton(buttonId) {
+   console.log(buttonId);
    // set the player name into selected box
-   const playerName = document.getElementById("player-name").innerText;
+   const playerName = document.getElementById(
+      buttonId + "-player-name"
+   ).innerText;
    const playerContainer = document.getElementById("player-container");
-   const li = document.createElement("li");
-   li.classList.add("li");
-   playerContainer.appendChild(li);
+
+   // disable button
+   document.getElementById(buttonId).disabled = true;
+   document
+      .getElementById(buttonId)
+      .classList.replace("hover:bg-blue-700", "disabled:opacity-50");
    let player = document.getElementsByClassName("li");
    const playerLength = player.length;
    console.log(playerLength);
-   if (playerLength - 1 < 5) {
-      console.log(playerLength - 1);
+   if (playerLength < 5) {
+      const li = document.createElement("li");
+      li.classList.add("li");
       li.innerText = playerName;
       playerContainer.appendChild(li);
    } else {
-      alert("beshi");
+      alert("You have selected the best five players");
    }
 }
 

@@ -9,6 +9,13 @@
       <link rel="stylesheet" href="css/style.css" />
       <!-- tailwind cdn link -->
       <script src="https://cdn.tailwindcss.com"></script>
+      <!-- font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+         rel="stylesheet"
+      />
    </head>
    <body>
       <header>
@@ -18,13 +25,14 @@
                   Create your dream team by <br />
                   selecting five
                </h1>
-               <p class="w-9/12 mx-auto font-semibold mt-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestiae a soluta laudantium quasi alias odio ratione et
-                  perspiciatis. Voluptatibus maxime excepturi asperiores
-                  expedita recusandae repellendus molestias deserunt dolore id
-                  mollitia! Fugit qui ipsum voluptatibus ipsam tempore fuga illo
-                  repellendus veritatis rem, dolorum, animi accusamus?
+               <p class="w-9/12 mx-auto font-medium mt-4">
+                  Whilst we make all reasonable efforts to ensure that
+                  information found on this site is accurate, Football Team News
+                  assumes no liability for any errors or omissions, nor for any
+                  actions taken in reliance thereon. In no event shall Football
+                  of use of computer equipment, software or data, loss of or
+                  waste of management or other staff time, or for any indirect,
+                  consequential or special loss (howsoever arising).
                </p>
             </div>
          </section>
@@ -39,7 +47,7 @@
                      </div>
                      <div class="player-info mt-6">
                         <h3
-                           id="player-name"
+                           id="select-1-player-name"
                            class="player-name font-semibold text-xl"
                         >
                            Monika
@@ -52,7 +60,8 @@
                            <p>2 asists</p>
                         </div>
                         <button
-                           onclick="selectButton()"
+                           id="select-1"
+                           onclick="selectButton(id)"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
@@ -62,14 +71,14 @@
                   <!-- card 2-->
                   <div class="card bg-black h-80">
                      <div>
-                        <img src="images/player-monika.png" alt="" />
+                        <img src="images/masura.png" alt="" />
                      </div>
                      <div class="player-info mt-6">
                         <h3
-                           id="player-name"
+                           id="select-2-player-name"
                            class="player-name font-semibold text-xl"
                         >
-                           Monika
+                           Masura
                         </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
@@ -79,7 +88,8 @@
                            <p>2 asists</p>
                         </div>
                         <button
-                           onclick="selectButton()"
+                           id="select-2"
+                           onclick="selectButton(id)"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
@@ -89,11 +99,14 @@
                   <!-- card 3-->
                   <div class="card bg-black h-80">
                      <div>
-                        <img src="images/player-monika.png" alt="" />
+                        <img src="images/sanjida.png" alt="" />
                      </div>
                      <div class="player-info mt-6">
-                        <h3 id="player-name" class="font-semibold text-xl">
-                           Monika
+                        <h3
+                           id="select-3-player-name"
+                           class="font-semibold text-xl"
+                        >
+                           Sanjida Akhter
                         </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
@@ -103,8 +116,8 @@
                            <p>2 asists</p>
                         </div>
                         <button
-                           id=""
-                           onclick="selectButton()"
+                           id="select-3"
+                           onclick="selectButton(id)"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
@@ -116,10 +129,15 @@
                <div class="grid grid-cols-3 mt-11 text-white gap-6 text-center">
                   <div class="card bg-black h-80">
                      <div>
-                        <img src="images/player-monika.png" alt="" />
+                        <img src="images/Ritu_Porna_Chakma .png" alt="" />
                      </div>
                      <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <h3
+                           id="select-4-player-name"
+                           class="font-semibold text-xl"
+                        >
+                           Ritu Porna
+                        </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
                            class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
@@ -128,20 +146,26 @@
                            <p>2 asists</p>
                         </div>
                         <button
-                           onclick="selectButton()"
+                           id="select-4"
+                           onclick="selectButton(id)"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
                         </button>
                      </div>
                   </div>
-                  <!-- card -->
+                  <!-- card 5-->
                   <div class="card bg-black h-80">
                      <div>
-                        <img src="images/player-monika.png" alt="" />
+                        <img src="images/Sabina.png" alt="" />
                      </div>
                      <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <h3
+                           id="select-5-player-name"
+                           class="font-semibold text-xl"
+                        >
+                           Sabina
+                        </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
                            class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
@@ -150,20 +174,26 @@
                            <p>2 asists</p>
                         </div>
                         <button
-                           onclick="selectButton()"
+                           id="select-5"
+                           onclick="selectButton(id)"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
                         </button>
                      </div>
                   </div>
-                  <!-- card -->
+                  <!-- card 6-->
                   <div class="card bg-black h-80">
                      <div>
-                        <img src="images/player-monika.png" alt="" />
+                        <img src="images/sirat.png" alt="" />
                      </div>
                      <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <h3
+                           id="select-6-player-name"
+                           class="font-semibold text-xl"
+                        >
+                           Sirat Jahan Shopna
+                        </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
                            class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
@@ -172,7 +202,8 @@
                            <p>2 asists</p>
                         </div>
                         <button
-                           onclick="selectButton()"
+                           id="select-6"
+                           onclick="selectButton(id)"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
@@ -184,10 +215,15 @@
                <div class="grid grid-cols-3 mt-11 text-white gap-6 text-center">
                   <div class="card bg-black h-80">
                      <div>
-                        <img src="images/player-monika.png" alt="" />
+                        <img src="images/krishna-rani-sarkar.png" alt="" />
                      </div>
                      <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <h3
+                           id="select-7-player-name"
+                           class="font-semibold text-xl"
+                        >
+                           Krisna rani sarkar
+                        </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
                            class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
@@ -196,20 +232,26 @@
                            <p>2 asists</p>
                         </div>
                         <button
-                           onclick="selectButton()"
+                           id="select-7"
+                           onclick="selectButton(id)"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
                         </button>
                      </div>
                   </div>
-                  <!-- card -->
+                  <!-- card 8-->
                   <div class="card bg-black h-80">
                      <div>
-                        <img src="images/player-monika.png" alt="" />
+                        <img src="images/Nilufa.png" alt="" />
                      </div>
                      <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <h3
+                           id="select-8-player-name"
+                           class="font-semibold text-xl"
+                        >
+                           Nilufa Yesmin Nila
+                        </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
                            class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
@@ -218,20 +260,26 @@
                            <p>2 asists</p>
                         </div>
                         <button
-                           onclick="selectButton()"
+                           id="select-8"
+                           onclick="selectButton(id)"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
                         </button>
                      </div>
                   </div>
-                  <!-- card -->
+                  <!-- card 9-->
                   <div class="card bg-black h-80">
                      <div>
-                        <img src="images/player-monika.png" alt="" />
+                        <img src="images/tohura.png" alt="" />
                      </div>
                      <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <h3
+                           id="select-9-player-name"
+                           class="font-semibold text-xl"
+                        >
+                           Tohura Khatun
+                        </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
                            class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
@@ -240,7 +288,8 @@
                            <p>2 asists</p>
                         </div>
                         <button
-                           onclick="selectButton()"
+                           id="select-9"
+                           onclick="selectButton(id)"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
@@ -255,7 +304,10 @@
                >
                   <h1 class="mt-4">Selected-V</h1>
                   <hr class="w-9/12 mx-auto mb-4" />
-                  <ul class="text-start" id="player-container"></ul>
+                  <ol
+                     class="list-decimal text-start pl-8"
+                     id="player-container"
+                  ></ol>
                </div>
                <div class="grid grid-row-1 bg-dark mt-6 border-2 p-4 pb-4">
                   <h1 class="text-white">Budget</h1>
