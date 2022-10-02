@@ -38,7 +38,12 @@
                         <img src="images/player-monika.png" alt="" />
                      </div>
                      <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <h3
+                           id="player-name"
+                           class="player-name font-semibold text-xl"
+                        >
+                           Monika
+                        </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
                            class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
@@ -47,19 +52,25 @@
                            <p>2 asists</p>
                         </div>
                         <button
+                           onclick="selectButton()"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
                         </button>
                      </div>
                   </div>
-                  <!-- card -->
+                  <!-- card 2-->
                   <div class="card bg-black h-80">
                      <div>
                         <img src="images/player-monika.png" alt="" />
                      </div>
                      <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <h3
+                           id="player-name"
+                           class="player-name font-semibold text-xl"
+                        >
+                           Monika
+                        </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
                            class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
@@ -68,19 +79,22 @@
                            <p>2 asists</p>
                         </div>
                         <button
+                           onclick="selectButton()"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
                         </button>
                      </div>
                   </div>
-                  <!-- card -->
+                  <!-- card 3-->
                   <div class="card bg-black h-80">
                      <div>
                         <img src="images/player-monika.png" alt="" />
                      </div>
                      <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <h3 id="player-name" class="font-semibold text-xl">
+                           Monika
+                        </h3>
                         <div
                            style="color: rgba(179, 179, 179, 1)"
                            class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
@@ -89,71 +103,8 @@
                            <p>2 asists</p>
                         </div>
                         <button
-                           class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
-                        >
-                           Select
-                        </button>
-                     </div>
-                  </div>
-               </div>
-               <!-- cards -->
-               <div class="grid grid-cols-3 mt-11 text-white gap-6 text-center">
-                  <div class="card bg-black h-80">
-                     <div>
-                        <img src="images/player-monika.png" alt="" />
-                     </div>
-                     <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
-                        <div
-                           style="color: rgba(179, 179, 179, 1)"
-                           class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
-                        >
-                           <p>20 goals</p>
-                           <p>2 asists</p>
-                        </div>
-                        <button
-                           class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
-                        >
-                           Select
-                        </button>
-                     </div>
-                  </div>
-                  <!-- card -->
-                  <div class="card bg-black h-80">
-                     <div>
-                        <img src="images/player-monika.png" alt="" />
-                     </div>
-                     <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
-                        <div
-                           style="color: rgba(179, 179, 179, 1)"
-                           class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
-                        >
-                           <p>20 goals</p>
-                           <p>2 asists</p>
-                        </div>
-                        <button
-                           class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
-                        >
-                           Select
-                        </button>
-                     </div>
-                  </div>
-                  <!-- card -->
-                  <div class="card bg-black h-80">
-                     <div>
-                        <img src="images/player-monika.png" alt="" />
-                     </div>
-                     <div class="player-info mt-6">
-                        <h3 class="font-semibold text-xl">Monika</h3>
-                        <div
-                           style="color: rgba(179, 179, 179, 1)"
-                           class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
-                        >
-                           <p>20 goals</p>
-                           <p>2 asists</p>
-                        </div>
-                        <button
+                           id=""
+                           onclick="selectButton()"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
@@ -177,6 +128,7 @@
                            <p>2 asists</p>
                         </div>
                         <button
+                           onclick="selectButton()"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
@@ -198,6 +150,7 @@
                            <p>2 asists</p>
                         </div>
                         <button
+                           onclick="selectButton()"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
@@ -219,6 +172,75 @@
                            <p>2 asists</p>
                         </div>
                         <button
+                           onclick="selectButton()"
+                           class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
+                        >
+                           Select
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <!-- cards -->
+               <div class="grid grid-cols-3 mt-11 text-white gap-6 text-center">
+                  <div class="card bg-black h-80">
+                     <div>
+                        <img src="images/player-monika.png" alt="" />
+                     </div>
+                     <div class="player-info mt-6">
+                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <div
+                           style="color: rgba(179, 179, 179, 1)"
+                           class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
+                        >
+                           <p>20 goals</p>
+                           <p>2 asists</p>
+                        </div>
+                        <button
+                           onclick="selectButton()"
+                           class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
+                        >
+                           Select
+                        </button>
+                     </div>
+                  </div>
+                  <!-- card -->
+                  <div class="card bg-black h-80">
+                     <div>
+                        <img src="images/player-monika.png" alt="" />
+                     </div>
+                     <div class="player-info mt-6">
+                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <div
+                           style="color: rgba(179, 179, 179, 1)"
+                           class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
+                        >
+                           <p>20 goals</p>
+                           <p>2 asists</p>
+                        </div>
+                        <button
+                           onclick="selectButton()"
+                           class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
+                        >
+                           Select
+                        </button>
+                     </div>
+                  </div>
+                  <!-- card -->
+                  <div class="card bg-black h-80">
+                     <div>
+                        <img src="images/player-monika.png" alt="" />
+                     </div>
+                     <div class="player-info mt-6">
+                        <h3 class="font-semibold text-xl">Monika</h3>
+                        <div
+                           style="color: rgba(179, 179, 179, 1)"
+                           class="flex mt-2 justify-around w-9/12 mx-auto justify-center items-center"
+                        >
+                           <p>20 goals</p>
+                           <p>2 asists</p>
+                        </div>
+                        <button
+                           onclick="selectButton()"
                            class="bg-slate-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-16 rounded"
                         >
                            Select
@@ -233,6 +255,7 @@
                >
                   <h1 class="mt-4">Selected-V</h1>
                   <hr class="w-9/12 mx-auto mb-4" />
+                  <ul class="text-start" id="player-container"></ul>
                </div>
                <div class="grid grid-row-1 bg-dark mt-6 border-2 p-4 pb-4">
                   <h1 class="text-white">Budget</h1>
@@ -241,6 +264,7 @@
                      <div class="flex justify-center items-center">
                         <label for="" class="pr-2">Per Player:</label>
                         <input
+                           id="per-player"
                            class="text-black w-32 h-10 rounded"
                            type="text"
                         />
@@ -250,36 +274,49 @@
                         class="input-button mt-6 h-10 w-full"
                         type="button"
                         value="calculate "
+                        id="calculate"
                      />
                      <div class="text-start mt-6">
-                        Player Expense : $ <span>00</span>
+                        Player Expense : $ <span id="player-expense">00</span>
                      </div>
                      <div class="flex mt-6 justify-center items-center">
-                        <label for="" class="pr-2">Per Player:</label>
+                        <label for="" class="pr-2">Manager:</label>
                         <input
+                           id="manager"
                            class="text-black w-32 h-10 rounded"
                            type="text"
                         />
                      </div>
                      <div class="flex mt-6 justify-center items-center">
-                        <label for="" class="pr-2">Per Player:</label>
+                        <label for="" class="pr-2">Coach:</label>
                         <input
+                           id="coach"
                            class="text-black w-32 h-10 rounded"
                            type="text"
                         />
                      </div>
                      <input
+                        id="calculate-total"
                         style="background-color: #015196"
                         class="input-button mt-6 h-10 w-full"
                         type="button"
-                        value="calculate "
+                        value="Calculate total"
                      />
-                     <div class="mt-6">Total : $ <span>00</span></div>
+                     <div class="mt-6">
+                        Total : $ <span id="displayTotal">00</span>
+                     </div>
                   </form>
                </div>
             </div>
          </section>
       </main>
-      <footer></footer>
+      <footer class="p-20">
+         <hr class="w-full" />
+         <h1 class="text-center text-white text-xl font-medium mt-20">
+            Copyright @ 2022 All Rights Reserved.
+         </h1>
+      </footer>
+      <!-- js link -->
+      <script src="js/utilities.js"></script>
    </body>
 </html>
